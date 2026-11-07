@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowDown, ArrowUpRight, Instagram, Youtube, Mail, Play, Clapperboard, Camera, Video, Film, Aperture, ExternalLink, MapPin, ArrowRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Instagram, Youtube, Mail, Clapperboard,  Video, Film, Aperture,  MapPin } from "lucide-react";
 import BuildAgents from "@/components/build-agents";
 
 const skills = [
