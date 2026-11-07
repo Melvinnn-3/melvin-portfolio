@@ -70,7 +70,7 @@ export default function BuildAgents() {
     const jobs: Job[] = [];
     const positions = agents.map(() => ({ x: -100, y: -100 }));
     let raf = 0;
-    let last = 0;
+    const last = 0;
     let tourStart = 0;
     let tourFrom = 0;
     let tourDistance = 0;
@@ -244,7 +244,7 @@ export default function BuildAgents() {
   return (
     <>
       <div className="agent-layer" aria-hidden="true">
-        {cursors.map((c, i) => (
+        {cursors.map((c) => (
           <div key={c.label} className={`agent-cursor ${c.visible && enabled ? "cursor-visible" : ""}`} style={{ transform: `translate3d(${c.x}px, ${c.y}px, 0)`, ["--agent-color" as string]: c.color }}>
             <span className="cursor-arrow">➤</span>
             <span className="robot-tag"><span className="robot"><i /><i /><b /></span>{c.label}</span>
